@@ -9,3 +9,16 @@ python3 ./rpc_client_solana.py -i <no._of_iterations> -s <sleep_time_between_ite
 
 python3 ./rpc_client_solathon.py -i <no._of_iterations> -s <sleep_time_between_iterations> -u <url_or_endpoint>
 ```
+## NOTE:
+Default values are
+-i = 10
+-s = 50
+-u = https://api.mainnet-beta.solana.com
+
+for best results take tests with at least 500 iterations
+
+## Results
+solathon shows less latency
+
+##Improvements:
+replace the httpx library used with requests for better performance but it will result in no async mode
